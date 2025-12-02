@@ -1,0 +1,45 @@
+export const personalData = {
+  name: 'Jonathan Tshibuyi Kayembe',
+  phone: '343-558-6755',
+  location: 'Ottawa, ON, Canada',
+  email: 'jkayembe12@yahoo.com',
+  linkedin: 'https://www.linkedin.com/in/jonathan-kayembe-02a4a6377',
+  github: 'https://github.com',
+  education: [
+    {
+      degree: 'Diplômé d\'études collégiales en programmation informatique',
+      period: '2024-2025',
+      institution: 'La Cité Collégiale',
+      location: 'Ottawa, Ontario',
+    },
+    {
+      degree: 'Étudiant en Technologie du génie informatique',
+      period: '2025-présent',
+      institution: 'La Cité Collégiale',
+      location: 'Ottawa, Ontario',
+    },
+  ],
+  skills: {
+    programming: ['C#', 'Java', 'Swift', 'Kotlin', 'Python', 'HTML', 'CSS', 'JavaScript', 'PHP', 'SQL', 'JSON'],
+    web: ['Vue.js', 'React.js', 'Next.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'MySQL', 'MongoDB'],
+    mobile: ['Android (Java/Kotlin)', 'iOS (Swift)'],
+    databases: ['MySQL', 'SQL Server', 'MongoDB'],
+    tools: ['Visual Studio', 'VS Code', 'Power BI', 'VMware', 'Sequelize'],
+    os: ['Windows', 'Linux'],
+    versionControl: ['Git', 'GitHub'],
+    cybersecurity: ['Cisco', 'CCNA CyberOps basics'],
+    projectManagement: ['Jira', 'Microsoft Project'],
+    office: ['Microsoft Office'],
+  },
+  softSkills: [
+    'Travail d\'équipe',
+    'Adaptabilité',
+    'Responsabilité',
+    'Organisation',
+    'Analytique',
+    'Dynamique',
+    'Rétroaction constructive',
+  ],
+  bio: "Je suis un développeur passionné spécialisé dans le développement full-stack, mobile et les bases de données. Diplômé en programmation informatique et actuellement étudiant en Technologie du génie informatique à La Cité Collégiale, j'ai acquis une solide expérience dans la création d'applications web et mobiles modernes.",
+}
+

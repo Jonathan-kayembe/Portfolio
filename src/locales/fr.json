@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "education": "Formation",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Jonathan Tshibuyi Kayembe",
+    "subtitle": "Développeur Full-Stack / Mobile / Base de données",
+    "seeProjects": "Voir les projets",
+    "downloadCV": "Télécharger le CV",
+    "scroll": "Défiler",
+    "knowledgePrefix": "Connaissances en",
+    "typing": ["React", "Vue.js", "Swift", "Kotlin", "PHP", "SQL", "Node.js", "MongoDB", "Cybersécurité", "Réseautique"]
+  },
+  "about": {
+    "title": "À propos de moi",
+    "bio": "Je suis un développeur passionné spécialisé dans le développement full-stack, mobile et les bases de données. Diplômé en programmation informatique et actuellement étudiant en Technologie du génie informatique à La Cité Collégiale, j'ai acquis une solide expérience dans la création d'applications web et mobiles modernes.",
+    "techSkills": "Compétences techniques",
+    "softSkillsTitle": "Compétences personnelles"
+  },
+  "education": {
+    "title": "Formation",
+    "degree1": "Diplômé d'études collégiales en programmation informatique",
+    "degree2": "Étudiant en Technologie du génie informatique",
+    "period1": "2024-2025",
+    "period2": "2025-présent",
+    "institution": "La Cité Collégiale",
+    "location": "Ottawa, Ontario",
+    "description1": "Formation complète en programmation informatique avec projets pratiques",
+    "description2": "Formation en cours en technologie du génie informatique"
+  },
+  "volunteer": {
+    "title": "Bénévolat",
+    "tutor": {
+      "title": "Tuteur en mathématiques et en sciences",
+      "description": "Tuteur pour élèves du secondaire",
+      "period": "2020-2023"
+    }
+  },
+  "projects": {
+    "title": "Mes projets",
+    "filter": "Filtrer par technologie",
+    "all": "Tous",
+    "noResults": "Aucun projet trouvé pour ce filtre.",
+    "viewCode": "Voir le code",
+    "viewDemo": "Voir la démo",
+    "viewDetails": "Voir les détails de",
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce de Menuiserie Artisanale",
+        "description": "Application e-commerce complète full-stack pour une menuiserie artisanale. Le projet comprend deux interfaces frontend (client et gestionnaire) et une API REST backend robuste développée avec Laravel. Fonctionnalités : authentification sécurisée, catalogue de produits, panier persistant avec synchronisation automatique, système de commandes complet, interface d'administration avec tableaux de bord et statistiques, gestion du stock en temps réel."
+      },
+      "medical": {
+        "title": "Application de gestion du personnel médical",
+        "description": "Application de bureau pour la gestion du personnel médical avec interface intuitive et fonctionnalités complètes."
+      },
+      "climate": {
+        "title": "Base de données climatique",
+        "description": "Base de données pour le suivi de la pollution, des précipitations et d'autres données climatiques."
+      },
+      "equipment": {
+        "title": "CortexIT - Système de Gestion d'Équipements IT",
+        "description": "Application SaaS complète de gestion d'inventaire et de maintenance d'équipements IT avec architecture multi-tenant. Solution full-stack moderne avec authentification sécurisée (JWT), gestion des utilisateurs avec 4 rôles (ADMIN, MANAGER, TECHNICIAN, USER), gestion complète des équipements et maintenances, tableaux de bord en temps réel avec graphiques, et interface multilingue (FR/EN) avec design moderne style SaaS."
+      },
+      "marathon": {
+        "title": "VelocityRun - Site web marathon",
+        "description": "Site web bilingue (FR/EN) développé avec Next.js 15 et React 19 pour promouvoir des événements de course à pied à Ottawa. Le projet inclut un système complet d'internationalisation, un formulaire de contact avec validation en temps réel, un compte à rebours dynamique, et une optimisation SEO complète. Fonctionnalités : i18n (FR/EN), Server Actions, Resend API, compte à rebours dynamique, design responsive, optimisation SEO (Score Lighthouse > 90)."
+      },
+      "android": {
+        "title": "Application Android de gestion",
+        "description": "Application Android développée avec Java/Kotlin pour la gestion de tâches et projets."
+      }
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "programming": "Langages de programmation",
+    "web": "Développement web",
+    "mobile": "Développement mobile",
+    "databases": "Bases de données",
+    "tools": "Outils de développement",
+    "os": "Systèmes d'exploitation",
+    "versionControl": "Gestion de versions",
+    "cybersecurity": "Réseautique et cybersécurité",
+    "projectManagement": "Gestion de projets",
+    "office": "Bureautique",
+    "softSkills": {
+      "title": "Aptitudes",
+      "teamwork": "Capacité de travailler en équipe",
+      "adaptability": "Capacité d'adaptation",
+      "responsibility": "Sens des responsabilités",
+      "organization": "Sens de l'organisation",
+      "analytical": "Précis, analytique, dynamique",
+      "feedback": "Capacité à donner et à recevoir de la rétroaction constructive"
+    }
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": "N'hésitez pas à me contacter pour toute opportunité",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès!",
+    "error": "Erreur lors de l'envoi. Veuillez réessayer.",
+    "configError": "Configuration EmailJS manquante. Veuillez configurer les variables d'environnement.",
+    "contactInfo": "Informations de contact",
+    "socialMedia": "Réseaux sociaux",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "votre@email.com",
+    "messagePlaceholder": "Votre message..."
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "quickLinks": "Liens rapides"
+  },
+  "common": {
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "email": "Email"
+  },
+  "error": {
+    "title": "Une erreur est survenue",
+    "message": "Veuillez rafraîchir la page ou réessayer plus tard.",
+    "retry": "Réessayer"
+  },
+  "notFound": {
+    "title": "Page non trouvée",
+    "message": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "home": "Retour à l'accueil",
+    "back": "Retour"
+  },
+  "projectDetails": {
+    "backToProjects": "Retour aux projets",
+    "technologies": "Technologies utilisées",
+    "features": "Fonctionnalités principales",
+    "challenges": "Challenges et solutions",
+    "demoVideo": "Vidéo de démonstration",
+    "demoVideos": "Vidéos de démonstration",
+    "videoNotSupported": "Votre navigateur ne supporte pas la lecture de vidéos.",
+    "viewDemo": "Voir la démo",
+    "viewCode": "Voir le code",
+    "viewFrontendCode": "Code Frontend",
+    "viewBackendCode": "Code Backend"
+  }
+}

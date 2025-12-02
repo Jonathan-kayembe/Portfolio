@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Jonathan Tshibuyi Kayembe",
+    "subtitle": "Full-Stack / Mobile / Database Developer",
+    "seeProjects": "See Projects",
+    "downloadCV": "Download CV",
+    "scroll": "Scroll",
+    "knowledgePrefix": "Knowledge in",
+    "typing": ["React", "Vue.js", "Swift", "Kotlin", "PHP", "SQL", "Node.js", "MongoDB", "Cybersecurity", "Networking"]
+  },
+  "about": {
+    "title": "About me",
+    "bio": "I am a passionate developer specialized in full-stack, mobile and database development. Graduated in computer programming and currently studying Computer Engineering Technology at La Cité Collégiale, I have acquired solid experience in creating modern web and mobile applications.",
+    "techSkills": "Technical skills",
+    "softSkillsTitle": "Soft skills"
+  },
+  "education": {
+    "title": "Education",
+    "degree1": "Diploma in Computer Programming",
+    "degree2": "Student in Computer Engineering Technology",
+    "period1": "2024-2025",
+    "period2": "2025-present",
+    "institution": "La Cité Collégiale",
+    "location": "Ottawa, Ontario",
+    "description1": "Complete training in computer programming with practical projects",
+    "description2": "Ongoing training in computer engineering technology"
+  },
+  "volunteer": {
+    "title": "Volunteer Work",
+    "tutor": {
+      "title": "Mathematics and Science Tutor",
+      "description": "Tutor for high school students",
+      "period": "2020-2023"
+    }
+  },
+  "projects": {
+    "title": "My projects",
+    "filter": "Filter by technology",
+    "all": "All",
+    "noResults": "No projects found for this filter.",
+    "viewCode": "View code",
+    "viewDemo": "View demo",
+    "viewDetails": "View details of",
+    "items": {
+      "ecommerce": {
+        "title": "Artisan Carpentry E-Commerce",
+        "description": "Complete full-stack e-commerce application for an artisan carpentry business. The project includes two frontend interfaces (client and manager) and a robust REST API backend developed with Laravel. Features: secure authentication, product catalog, persistent shopping cart with automatic synchronization, complete order system, administration interface with dashboards and statistics, real-time stock management."
+      },
+      "medical": {
+        "title": "Medical staff management application",
+        "description": "Desktop application for medical staff management with intuitive interface and complete features."
+      },
+      "climate": {
+        "title": "Climate database",
+        "description": "Database for tracking pollution, precipitation and other climate data."
+      },
+      "equipment": {
+        "title": "CortexIT - IT Equipment Management System",
+        "description": "Complete SaaS application for IT equipment inventory and maintenance management with multi-tenant architecture. Modern full-stack solution with secure authentication (JWT), user management with 4 roles (ADMIN, MANAGER, TECHNICIAN, USER), complete equipment and maintenance management, real-time dashboards with charts, and multilingual interface (FR/EN) with modern SaaS-style design."
+      },
+      "marathon": {
+        "title": "VelocityRun - Marathon website",
+        "description": "Bilingual website (FR/EN) developed with Next.js 15 and React 19 to promote running events in Ottawa. The project includes a complete internationalization system, a contact form with real-time validation, a dynamic countdown, and complete SEO optimization. Features: i18n (FR/EN), Server Actions, Resend API, dynamic countdown, responsive design, SEO optimization (Lighthouse Score > 90)."
+      },
+      "android": {
+        "title": "Android management application",
+        "description": "Android application developed with Java/Kotlin for task and project management."
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "programming": "Programming languages",
+    "web": "Web development",
+    "mobile": "Mobile development",
+    "databases": "Databases",
+    "tools": "Development tools",
+    "os": "Operating systems",
+    "versionControl": "Version control",
+    "cybersecurity": "Networking & cybersecurity",
+    "projectManagement": "Project management",
+    "office": "Office software",
+    "softSkills": {
+      "title": "Soft skills",
+      "teamwork": "Teamwork ability",
+      "adaptability": "Adaptability",
+      "responsibility": "Sense of responsibility",
+      "organization": "Organizational skills",
+      "analytical": "Precise, analytical, dynamic",
+      "feedback": "Ability to give and receive constructive feedback"
+    }
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Feel free to contact me for any opportunity",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again.",
+    "configError": "EmailJS configuration missing. Please configure environment variables.",
+    "contactInfo": "Contact information",
+    "socialMedia": "Social media",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Your message..."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "quickLinks": "Quick links"
+  },
+  "common": {
+    "phone": "Phone",
+    "location": "Location",
+    "email": "Email"
+  },
+  "error": {
+    "title": "An error occurred",
+    "message": "Please refresh the page or try again later.",
+    "retry": "Retry"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "The page you are looking for does not exist or has been moved.",
+    "home": "Back to home",
+    "back": "Go back"
+  },
+  "projectDetails": {
+    "backToProjects": "Back to projects",
+    "technologies": "Technologies used",
+    "features": "Main features",
+    "challenges": "Challenges and solutions",
+    "demoVideo": "Demo video",
+    "demoVideos": "Demo videos",
+    "videoNotSupported": "Your browser does not support video playback.",
+    "viewDemo": "View demo",
+    "viewCode": "View code",
+    "viewFrontendCode": "Frontend Code",
+    "viewBackendCode": "Backend Code"
+  }
+}

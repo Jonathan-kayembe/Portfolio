@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemap (à mettre à jour avec votre domaine)
+# Sitemap: https://votre-domaine.com/sitemap.xml
+
