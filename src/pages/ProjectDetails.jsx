@@ -7,6 +7,7 @@ import { ArrowLeft, Code2, Server, ExternalLink } from 'lucide-react'
 import { projects } from '../data/projects'
 import { useProjectTranslations } from '../hooks/useProjectTranslations'
 import { techIcons } from '../data/projects'
+import VideoPlayer from '../components/VideoPlayer'
 
 /**
  * Page de détails d'un projet
@@ -185,22 +186,11 @@ const ProjectDetails = () => {
                     <h3 className="text-xl font-semibold mb-3 text-light-text">
                       {video.title}
                     </h3>
-                    <div className="rounded-xl overflow-hidden shadow-2xl">
-                      <video
-                        controls
-                        className="w-full"
-                        poster={project.image}
-                        preload="metadata"
-                        playsInline
-                        onError={(e) => {
-                          console.error('Erreur de chargement vidéo:', e);
-                          console.error('Chemin vidéo:', `${import.meta.env.BASE_URL}${video.path}`);
-                        }}
-                      >
-                        <source src={`${import.meta.env.BASE_URL}${video.path}`} type="video/mp4" />
-                        {t('projectDetails.videoNotSupported', { defaultValue: 'Votre navigateur ne supporte pas la lecture de vidéos.' })}
-                      </video>
-                    </div>
+                    <VideoPlayer
+                      src={`${import.meta.env.BASE_URL}${video.path}`}
+                      poster={project.image}
+                      title={video.title}
+                    />
                   </div>
                 ))}
               </div>
@@ -218,22 +208,11 @@ const ProjectDetails = () => {
               <h2 className="text-2xl font-bold mb-4 text-light-text">
                 {t('projectDetails.demoVideo', { defaultValue: 'Vidéo de démonstration' })}
               </h2>
-              <div className="rounded-xl overflow-hidden shadow-2xl">
-                <video
-                  controls
-                  className="w-full"
-                  poster={project.image}
-                  preload="metadata"
-                  playsInline
-                  onError={(e) => {
-                    console.error('Erreur de chargement vidéo:', e);
-                    console.error('Chemin vidéo:', `${import.meta.env.BASE_URL}${fullProjectData.demoVideo}`);
-                  }}
-                >
-                  <source src={`${import.meta.env.BASE_URL}${fullProjectData.demoVideo}`} type="video/mp4" />
-                  {t('projectDetails.videoNotSupported', { defaultValue: 'Votre navigateur ne supporte pas la lecture de vidéos.' })}
-                </video>
-              </div>
+              <VideoPlayer
+                src={`${import.meta.env.BASE_URL}${fullProjectData.demoVideo}`}
+                poster={project.image}
+                title={t('projectDetails.demoVideo', { defaultValue: 'Vidéo de démonstration' })}
+              />
             </motion.div>
           )}
 
