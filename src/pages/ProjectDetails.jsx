@@ -190,9 +190,14 @@ const ProjectDetails = () => {
                         controls
                         className="w-full"
                         poster={project.image}
+                        preload="metadata"
+                        playsInline
+                        onError={(e) => {
+                          console.error('Erreur de chargement vidéo:', e);
+                          console.error('Chemin vidéo:', `${import.meta.env.BASE_URL}${video.path}`);
+                        }}
                       >
                         <source src={`${import.meta.env.BASE_URL}${video.path}`} type="video/mp4" />
-                        <source src={`${import.meta.env.BASE_URL}${video.path}`} type="video/webm" />
                         {t('projectDetails.videoNotSupported', { defaultValue: 'Votre navigateur ne supporte pas la lecture de vidéos.' })}
                       </video>
                     </div>
@@ -218,9 +223,14 @@ const ProjectDetails = () => {
                   controls
                   className="w-full"
                   poster={project.image}
+                  preload="metadata"
+                  playsInline
+                  onError={(e) => {
+                    console.error('Erreur de chargement vidéo:', e);
+                    console.error('Chemin vidéo:', `${import.meta.env.BASE_URL}${fullProjectData.demoVideo}`);
+                  }}
                 >
                   <source src={`${import.meta.env.BASE_URL}${fullProjectData.demoVideo}`} type="video/mp4" />
-                  <source src={`${import.meta.env.BASE_URL}${fullProjectData.demoVideo}`} type="video/webm" />
                   {t('projectDetails.videoNotSupported', { defaultValue: 'Votre navigateur ne supporte pas la lecture de vidéos.' })}
                 </video>
               </div>
