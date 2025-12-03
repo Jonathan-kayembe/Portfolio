@@ -7,7 +7,7 @@ import { ArrowLeft, Code2, Server, ExternalLink } from 'lucide-react'
 import { projects } from '../data/projects'
 import { useProjectTranslations } from '../hooks/useProjectTranslations'
 import { techIcons } from '../data/projects'
-import VideoPlayer from '../components/VideoPlayer'
+import ImageGallery from '../components/ImageGallery'
 
 /**
  * Page de détails d'un projet
@@ -169,8 +169,8 @@ const ProjectDetails = () => {
             </motion.div>
           )}
 
-          {/* Vidéos de démo */}
-          {fullProjectData?.demoVideos && fullProjectData.demoVideos.length > 0 && (
+          {/* Images de démo */}
+          {fullProjectData?.demoImages && fullProjectData.demoImages.length > 0 && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -178,39 +178,18 @@ const ProjectDetails = () => {
               className="mb-8"
             >
               <h2 className="text-2xl font-bold mb-6 text-light-text">
-                {t('projectDetails.demoVideos', { defaultValue: 'Vidéos de démonstration' })}
+                {t('projectDetails.demoImages', { defaultValue: 'Captures d\'écran' })}
               </h2>
               <div className="space-y-8">
-                {fullProjectData.demoVideos.map((video, index) => (
-                  <div key={index} className="mb-6">
-                    <h3 className="text-xl font-semibold mb-3 text-light-text">
-                      {video.title}
-                    </h3>
-                    <VideoPlayer
-                      src={`${import.meta.env.BASE_URL}${video.path}`}
-                      title={video.title}
-                    />
-                  </div>
+                {fullProjectData.demoImages.map((group, index) => (
+                  <ImageGallery
+                    key={index}
+                    images={group.images}
+                    title={group.title}
+                    className="mb-6"
+                  />
                 ))}
               </div>
-            </motion.div>
-          )}
-          
-          {/* Vidéo de démo unique (pour compatibilité avec les autres projets) */}
-          {fullProjectData?.demoVideo && !fullProjectData?.demoVideos && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              className="mb-8"
-            >
-              <h2 className="text-2xl font-bold mb-4 text-light-text">
-                {t('projectDetails.demoVideo', { defaultValue: 'Vidéo de démonstration' })}
-              </h2>
-              <VideoPlayer
-                src={`${import.meta.env.BASE_URL}${fullProjectData.demoVideo}`}
-                title={t('projectDetails.demoVideo', { defaultValue: 'Vidéo de démonstration' })}
-              />
             </motion.div>
           )}
 
