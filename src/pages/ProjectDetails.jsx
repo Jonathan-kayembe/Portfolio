@@ -188,7 +188,6 @@ const ProjectDetails = () => {
                     </h3>
                     <VideoPlayer
                       src={`${import.meta.env.BASE_URL}${video.path}`}
-                      poster={project.image}
                       title={video.title}
                     />
                   </div>
@@ -210,7 +209,6 @@ const ProjectDetails = () => {
               </h2>
               <VideoPlayer
                 src={`${import.meta.env.BASE_URL}${fullProjectData.demoVideo}`}
-                poster={project.image}
                 title={t('projectDetails.demoVideo', { defaultValue: 'Vidéo de démonstration' })}
               />
             </motion.div>

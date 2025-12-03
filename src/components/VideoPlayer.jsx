@@ -6,7 +6,7 @@ import { Play, Pause } from 'lucide-react'
  * Composant vidéo avec contrôle au clic
  * Affiche un overlay play/pause et permet de contrôler la vidéo en cliquant dessus
  */
-const VideoPlayer = ({ src, poster, title, className = '' }) => {
+const VideoPlayer = ({ src, title, className = '' }) => {
   const videoRef = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
@@ -72,11 +72,10 @@ const VideoPlayer = ({ src, poster, title, className = '' }) => {
       <video
         ref={videoRef}
         src={src}
-        poster={poster}
         preload="metadata"
         playsInline
         loop={false}
-        className="w-full cursor-pointer"
+        className="w-full cursor-pointer bg-black"
         onClick={handleVideoClick}
         onPlay={handlePlay}
         onPause={handlePause}
