@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Jonathan Tshibuyi Kayembe</title>
+    <script>
+      // Redirection vers index.html pour que React Router gère les routes
+      // GitHub Pages utilise 404.html pour toutes les routes non trouvées
+      var path = window.location.pathname;
+      var base = '/Portfolio/';
+      
+      // Extraire le chemin relatif après /Portfolio/
+      var segments = path.split('/').filter(Boolean);
+      var repoIndex = segments.indexOf('Portfolio');
+      
+      if (repoIndex !== -1 && segments.length > repoIndex + 1) {
+        // Il y a un chemin après /Portfolio/
+        var route = '/' + segments.slice(repoIndex + 1).join('/');
+        // Rediriger vers index.html, React Router gérera la route
+        window.location.replace(base + 'index.html');
+      } else {
+        // Rediriger simplement vers index.html
+        window.location.replace(base + 'index.html');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirection en cours...</p>
+    <script>
+      // Fallback : si la redirection ne fonctionne pas, rediriger après 1 seconde
+      setTimeout(function() {
+        window.location.replace('/Portfolio/index.html');
+      }, 1000);
+    </script>
+  </body>
+</html>
+

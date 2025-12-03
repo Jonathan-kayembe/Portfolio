@@ -85,11 +85,11 @@ const ProjectCard = ({ project, index }) => {
         </p>
 
         {/* Technologies */}
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mt-3 mb-4 justify-center sm:justify-start">
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 text-xs font-medium bg-primary-600/20 text-primary-300 rounded-full border border-primary-500/30 group-hover:border-primary-400/60 group-hover:bg-primary-600/30 group-hover:text-primary-200 transition-all duration-300 group-hover:shadow-[0_0_10px_rgba(59,130,246,0.5)]"
+              className="px-3 py-1 text-xs font-medium bg-primary-600/20 text-primary-300 rounded-lg border border-primary-500/30 group-hover:border-primary-400/60 group-hover:bg-primary-600/30 group-hover:text-primary-200 transition-all duration-300 group-hover:shadow-[0_0_10px_rgba(59,130,246,0.5)] whitespace-nowrap"
             >
               {tech}
             </span>

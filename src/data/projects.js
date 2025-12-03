@@ -38,11 +38,11 @@ export const projects = [
     demoVideos: [
       {
         title: 'Interface Client',
-        path: '/demo-videos/e-commerce_client.mp4'
+        path: 'demo-videos/e-commerce_client.mp4'
       },
       {
         title: 'Interface Manager',
-        path: '/demo-videos/e-commerce_manager.mp4'
+        path: 'demo-videos/e-commerce_manager.mp4'
       }
     ],
   },
@@ -51,7 +51,7 @@ export const projects = [
     translationKey: 'medical',
     title: 'Application de gestion du personnel médical',
     description: 'Application de bureau pour la gestion du personnel médical avec interface intuitive et fonctionnalités complètes.',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800',
     technologies: ['C#', 'SQL Server'],
     category: 'desktop',
     codeLink: '#',
@@ -98,7 +98,7 @@ export const projects = [
       'Code structuré : Validation côté client/serveur, gestion d\'erreurs centralisée, logging structuré (Winston)'
     ],
     challenges: 'Développement d\'une architecture SaaS multi-tenant complète avec isolation garantie des données au niveau middleware. Implémentation d\'un système de rôles et permissions granulaire (RBAC) avec contrôle d\'accès au niveau de chaque endpoint. Gestion de l\'authentification JWT avec refresh tokens révocables et rotation automatique. Création d\'une interface utilisateur moderne et intuitive avec Vue.js 3 (Composition API) et Tailwind CSS, incluant un système d\'internationalisation complet. Optimisation des performances avec pagination, filtres avancés, et requêtes optimisées. Mise en place d\'un système de maintenance avec suivi complet du cycle de vie des interventions. Gestion de la synchronisation des données entre les différentes entités (équipements, maintenances, départements, utilisateurs) avec validation et contraintes d\'intégrité.',
-    demoVideo: '/demo-videos/CortexIT.mp4',
+    demoVideo: 'demo-videos/CortexIT.mp4',
   },
   {
     id: 5,
@@ -122,7 +122,7 @@ export const projects = [
       'Performance optimisée avec Next.js 15'
     ],
     challenges: 'Implémentation d\'un système d\'i18n robuste avec Next.js App Router. Optimisation des performances pour atteindre un score Lighthouse supérieur à 90. Gestion des Server Actions pour les interactions serveur sans API routes.',
-    demoVideo: '/demo-videos/velocityrun-demo.mp4',
+    demoVideo: 'demo-videos/velocityrun-demo.mp4',
   },
   {
     id: 6,

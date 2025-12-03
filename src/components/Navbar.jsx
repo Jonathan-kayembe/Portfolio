@@ -37,8 +37,8 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-dark-surface/90 backdrop-blur-md shadow-lg border-b border-primary-600/20 neon-glow'
-          : 'bg-transparent'
+          ? 'bg-dark-surface/95 backdrop-blur-md shadow-lg border-b border-primary-600/20'
+          : 'bg-dark-surface/90 backdrop-blur-sm'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

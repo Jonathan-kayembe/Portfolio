@@ -102,11 +102,11 @@ const ProjectDetails = () => {
             <h2 className="text-2xl font-bold mb-4 text-light-text">
               {t('projectDetails.technologies', { defaultValue: 'Technologies utilisées' })}
             </h2>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2 mt-3 justify-center sm:justify-start">
               {project.technologies.map((tech) => (
                 <div
                   key={tech}
-                  className="flex items-center space-x-2 px-4 py-2 bg-dark-surface rounded-lg border border-primary-600/30 hover:border-primary-400/60 transition-all duration-300"
+                  className="flex items-center space-x-2 px-4 py-2 bg-dark-surface rounded-lg border border-primary-600/30 hover:border-primary-400/60 transition-all duration-300 whitespace-nowrap"
                 >
                   {techIcons[tech] && (
                     <img
@@ -191,8 +191,8 @@ const ProjectDetails = () => {
                         className="w-full"
                         poster={project.image}
                       >
-                        <source src={video.path} type="video/mp4" />
-                        <source src={video.path} type="video/webm" />
+                        <source src={`${import.meta.env.BASE_URL}${video.path}`} type="video/mp4" />
+                        <source src={`${import.meta.env.BASE_URL}${video.path}`} type="video/webm" />
                         {t('projectDetails.videoNotSupported', { defaultValue: 'Votre navigateur ne supporte pas la lecture de vidéos.' })}
                       </video>
                     </div>
@@ -219,8 +219,8 @@ const ProjectDetails = () => {
                   className="w-full"
                   poster={project.image}
                 >
-                  <source src={fullProjectData.demoVideo} type="video/mp4" />
-                  <source src={fullProjectData.demoVideo} type="video/webm" />
+                  <source src={`${import.meta.env.BASE_URL}${fullProjectData.demoVideo}`} type="video/mp4" />
+                  <source src={`${import.meta.env.BASE_URL}${fullProjectData.demoVideo}`} type="video/webm" />
                   {t('projectDetails.videoNotSupported', { defaultValue: 'Votre navigateur ne supporte pas la lecture de vidéos.' })}
                 </video>
               </div>

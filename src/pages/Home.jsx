@@ -135,7 +135,7 @@ const Home = () => {
   const downloadCV = useCallback(() => {
     try {
       const link = document.createElement('a')
-      link.href = '/CV.pdf'
+      link.href = `${import.meta.env.BASE_URL}CV.pdf`
       link.download = 'CV_Jonathan_Tshibuyi_Kayembe.pdf'
       document.body.appendChild(link)
       link.click()
@@ -145,7 +145,7 @@ const Home = () => {
         console.error('Error downloading CV:', error)
       }
       // Fallback: ouvrir dans un nouvel onglet
-      window.open('/CV.pdf', '_blank')
+      window.open(`${import.meta.env.BASE_URL}CV.pdf`, '_blank')
     }
   }, [])
 

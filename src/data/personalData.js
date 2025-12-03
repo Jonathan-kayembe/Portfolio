@@ -29,7 +29,7 @@ export const personalData = {
     versionControl: ['Git', 'GitHub'],
     cybersecurity: ['Cisco', 'CCNA CyberOps basics'],
     projectManagement: ['Jira', 'Microsoft Project'],
-    office: ['Microsoft Office'],
+    office: ['Microsoft Office 360'],
   },
   softSkills: [
     'Travail d\'équipe',

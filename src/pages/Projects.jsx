@@ -60,9 +60,9 @@ const Projects = () => {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center mb-12"
+            className="text-center mb-8"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
               {t('projects.title')}
             </h1>
           </motion.div>
@@ -72,7 +72,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="mb-12"
+            className="mb-8"
           >
             <div className="flex items-center justify-center mb-4">
               <Filter className="text-primary-400 mr-2" size={20} />
@@ -80,12 +80,12 @@ const Projects = () => {
                 {t('projects.filter')}
               </span>
             </div>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap justify-center gap-2 mb-4">
               {filterOptions.map((option) => (
                 <button
                   key={option.value}
                   onClick={() => handleFilterChange(option.value)}
-                  className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+                  className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 whitespace-nowrap ${
                     selectedFilter === option.value
                       ? 'bg-primary-600 text-white shadow-lg'
                       : 'bg-dark-surface text-light-text hover:bg-primary-600/20 border border-primary-600/30'
@@ -104,7 +104,7 @@ const Projects = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-8"
           >
             {filteredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} index={projects.indexOf(project)} />
