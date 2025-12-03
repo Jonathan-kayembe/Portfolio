@@ -76,7 +76,6 @@ const VideoPlayer = ({ src, poster, title, className = '' }) => {
         preload="metadata"
         playsInline
         loop={false}
-        crossOrigin="anonymous"
         className="w-full cursor-pointer"
         onClick={handleVideoClick}
         onPlay={handlePlay}
@@ -108,7 +107,7 @@ const VideoPlayer = ({ src, poster, title, className = '' }) => {
                 errorMessage = 'Erreur de décodage - Format non supporté'
                 break
               case 4: // MEDIA_ERR_SRC_NOT_SUPPORTED
-                errorMessage = 'Format vidéo non supporté'
+                errorMessage = 'Format vidéo non supporté - Le codec de la vidéo n\'est pas compatible avec ce navigateur. Veuillez re-encoder la vidéo en H.264.'
                 break
             }
           }
@@ -133,7 +132,7 @@ const VideoPlayer = ({ src, poster, title, className = '' }) => {
                       case 1: return 'Chargement interrompu'
                       case 2: return 'Erreur réseau - Vérifiez votre connexion'
                       case 3: return 'Erreur de décodage - Format non supporté'
-                      case 4: return 'Format vidéo non supporté'
+                      case 4: return 'Format vidéo non supporté - Codec incompatible. Re-encoder en H.264 recommandé.'
                       default: return 'Impossible de charger la vidéo'
                     }
                   })()
