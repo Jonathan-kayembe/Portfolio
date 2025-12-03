@@ -76,6 +76,7 @@ const VideoPlayer = ({ src, poster, title, className = '' }) => {
         preload="metadata"
         playsInline
         loop={false}
+        crossOrigin="anonymous"
         className="w-full cursor-pointer"
         onClick={handleVideoClick}
         onPlay={handlePlay}
@@ -85,9 +86,32 @@ const VideoPlayer = ({ src, poster, title, className = '' }) => {
         onCanPlay={handleCanPlay}
         onLoadStart={handleLoadStart}
         onError={(e) => {
+          const error = videoRef.current?.error
           console.error('Erreur de chargement vidéo:', e)
           console.error('Chemin vidéo:', src)
-          console.error('Détails erreur:', videoRef.current?.error)
+          console.error('Code erreur:', error?.code)
+          console.error('Message erreur:', error?.message)
+          console.error('ReadyState:', videoRef.current?.readyState)
+          console.error('NetworkState:', videoRef.current?.networkState)
+          
+          // Afficher un message d'erreur plus détaillé
+          let errorMessage = 'Impossible de charger la vidéo'
+          if (error) {
+            switch (error.code) {
+              case 1: // MEDIA_ERR_ABORTED
+                errorMessage = 'Chargement interrompu'
+                break
+              case 2: // MEDIA_ERR_NETWORK
+                errorMessage = 'Erreur réseau - Vérifiez votre connexion'
+                break
+              case 3: // MEDIA_ERR_DECODE
+                errorMessage = 'Erreur de décodage - Format non supporté'
+                break
+              case 4: // MEDIA_ERR_SRC_NOT_SUPPORTED
+                errorMessage = 'Format vidéo non supporté'
+                break
+            }
+          }
           setHasError(true)
           setIsLoading(false)
         }}
@@ -99,10 +123,36 @@ const VideoPlayer = ({ src, poster, title, className = '' }) => {
       {/* Message d'erreur */}
       {hasError && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/50 z-20">
-          <div className="text-center text-white p-4">
+          <div className="text-center text-white p-4 max-w-md">
             <p className="text-lg font-semibold mb-2">Erreur de chargement</p>
-            <p className="text-sm opacity-75">Impossible de charger la vidéo</p>
-            <p className="text-xs mt-2 opacity-50">{src}</p>
+            <p className="text-sm opacity-75 mb-4">
+              {videoRef.current?.error 
+                ? (() => {
+                    const error = videoRef.current.error
+                    switch (error.code) {
+                      case 1: return 'Chargement interrompu'
+                      case 2: return 'Erreur réseau - Vérifiez votre connexion'
+                      case 3: return 'Erreur de décodage - Format non supporté'
+                      case 4: return 'Format vidéo non supporté'
+                      default: return 'Impossible de charger la vidéo'
+                    }
+                  })()
+                : 'Impossible de charger la vidéo'
+              }
+            </p>
+            <p className="text-xs mt-2 opacity-50 break-all">{src}</p>
+            <button
+              onClick={() => {
+                setHasError(false)
+                setIsLoading(true)
+                if (videoRef.current) {
+                  videoRef.current.load()
+                }
+              }}
+              className="mt-4 px-4 py-2 bg-primary-600 hover:bg-primary-700 rounded-lg text-sm transition-colors"
+            >
+              Réessayer
+            </button>
           </div>
         </div>
       )}
