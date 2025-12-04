@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { personalData } from '../data/personalData'
-import { Linkedin, Mail, Github, Phone, MapPin } from 'lucide-react'
+import { Linkedin, Mail, Github, MapPin } from 'lucide-react'
 
 const Footer = () => {
   const { t } = useTranslation()
@@ -56,12 +56,6 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-light-text">{t('contact.contactInfo')}</h3>
             <ul className="space-y-3">
-              <li className="flex items-center space-x-2 text-light-secondary">
-                <Phone size={18} />
-                <a href={`tel:${personalData.phone}`} className="hover:text-primary-400 transition-colors neon-link">
-                  {personalData.phone}
-                </a>
-              </li>
               <li className="flex items-center space-x-2 text-light-secondary">
                 <Mail size={18} />
                 <a href={`mailto:${personalData.email}`} className="hover:text-primary-400 transition-colors neon-link">

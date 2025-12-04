@@ -257,7 +257,6 @@ Ce projet est sous licence MIT.
 
 - Email: jkayembe12@yahoo.com
 - LinkedIn: [jonathan-kayembe-02a4a6377](https://www.linkedin.com/in/jonathan-kayembe-02a4a6377)
-- Téléphone: 343-558-6755
 - Localisation: Ottawa, ON, Canada
 
 ---

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import { personalData } from '../data/personalData'
-import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react'
+import { Mail, MapPin, Linkedin, Github } from 'lucide-react'
 
 /**
  * Page de contact avec informations
@@ -56,19 +56,6 @@ const Contact = () => {
                       className="text-light-text hover:text-primary-400 transition-colors neon-link text-lg"
                     >
                       {personalData.email}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <Phone className="text-primary-400 mt-1 flex-shrink-0" size={24} />
-                  <div>
-                    <p className="text-sm text-light-secondary mb-1">{t('common.phone')}</p>
-                    <a
-                      href={`tel:${personalData.phone}`}
-                      className="text-light-text hover:text-primary-400 transition-colors neon-link text-lg"
-                    >
-                      {personalData.phone}
                     </a>
                   </div>
                 </div>

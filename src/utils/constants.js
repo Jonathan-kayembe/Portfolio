@@ -2,7 +2,6 @@ export const APP_CONFIG = {
   name: 'Jonathan Tshibuyi Kayembe',
   version: '1.0.0',
   email: 'jkayembe12@yahoo.com',
-  phone: '343-558-6755',
   location: 'Ottawa, ON, Canada',
   linkedin: 'https://www.linkedin.com/in/jonathan-kayembe-02a4a6377',
   github: 'https://github.com', // TODO: Remplacer par le vrai lien GitHub
