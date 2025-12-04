@@ -38,26 +38,26 @@ export const projects = [
       {
         title: 'Interface Client',
         images: [
-          { path: 'demo-videos/e-commerce_client/accueil.png', alt: "Page d'accueil" },
-          { path: 'demo-videos/e-commerce_client/produit.png', alt: 'Liste des produits' },
-          { path: 'demo-videos/e-commerce_client/produit-detail.png', alt: 'Détail produit' },
-          { path: 'demo-videos/e-commerce_client/payement.png', alt: 'Page de paiement' },
-          { path: 'demo-videos/e-commerce_client/livraison.png', alt: 'Page de livraison' },
-          { path: 'demo-videos/e-commerce_client/contact.png', alt: 'Page de contact' },
-          { path: 'demo-videos/e-commerce_client/question.png', alt: 'Page de questions' },
-          { path: 'demo-videos/e-commerce_client/retour.png', alt: 'Page de retour' },
-          { path: "demo-videos/e-commerce_client/Capture d'écran 2025-12-03 165547.png", alt: "Capture d'écran" }
+          { path: 'demo/e-commerce_client/accueil.png', alt: "Page d'accueil" },
+          { path: 'demo/e-commerce_client/produit.png', alt: 'Liste des produits' },
+          { path: 'demo/e-commerce_client/produit-detail.png', alt: 'Détail produit' },
+          { path: 'demo/e-commerce_client/payement.png', alt: 'Page de paiement' },
+          { path: 'demo/e-commerce_client/livraison.png', alt: 'Page de livraison' },
+          { path: 'demo/e-commerce_client/contact.png', alt: 'Page de contact' },
+          { path: 'demo/e-commerce_client/question.png', alt: 'Page de questions' },
+          { path: 'demo/e-commerce_client/retour.png', alt: 'Page de retour' },
+          { path: "demo/e-commerce_client/Capture d'écran 2025-12-03 165547.png", alt: "Capture d'écran" }
         ]
       },
       {
         title: 'Interface Manager',
         images: [
-          { path: 'demo-videos/e-commerce_manager/Dashboard.png', alt: 'Dashboard' },
-          { path: 'demo-videos/e-commerce_manager/Prouduit.png', alt: 'Gestion produits' },
-          { path: 'demo-videos/e-commerce_manager/Categorie.png', alt: 'Gestion catégories' },
-          { path: 'demo-videos/e-commerce_manager/Commande.png', alt: 'Gestion commandes' },
-          { path: 'demo-videos/e-commerce_manager/Utilisateur.png', alt: 'Gestion utilisateurs' },
-          { path: 'demo-videos/e-commerce_manager/Statistique.png', alt: 'Statistiques' }
+          { path: 'demo/e-commerce_manager/Dashboard.png', alt: 'Dashboard' },
+          { path: 'demo/e-commerce_manager/Prouduit.png', alt: 'Gestion produits' },
+          { path: 'demo/e-commerce_manager/Categorie.png', alt: 'Gestion catégories' },
+          { path: 'demo/e-commerce_manager/Commande.png', alt: 'Gestion commandes' },
+          { path: 'demo/e-commerce_manager/Utilisateur.png', alt: 'Gestion utilisateurs' },
+          { path: 'demo/e-commerce_manager/Statistique.png', alt: 'Statistiques' }
         ]
       }
     ],
@@ -67,13 +67,50 @@ export const projects = [
     id: 2,
     translationKey: 'medical',
     title: 'Application de gestion du personnel médical',
-    description: 'Application de bureau...',
+    description: 'Application de bureau Windows développée en C#/.NET 8.0 et WPF pour la gestion complète du personnel médical d\'un établissement hospitalier. Interface moderne multilingue (FR/EN) avec base de données SQL Server, permettant la gestion CRUD complète des médecins, infirmiers, départements et consultations.',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800',
-    technologies: ['C#', 'SQL Server'],
+    technologies: [
+      'C#', 
+      '.NET 8.0', 
+      'WPF', 
+      'XAML', 
+      'SQL Server', 
+      'MVVM Pattern',
+      'Microsoft.Data.SqlClient'
+    ],
     category: 'desktop',
     codeLink: '#',
     demoLink: '#',
     icon: FaJava,
+    features: [
+      'Gestion CRUD complète (Médecins, Infirmiers, Départements, Consultations)',
+      'Interface utilisateur moderne avec design Material Design',
+      'Support multilingue (Français/Anglais) avec changement dynamique',
+      'Base de données SQL Server avec relations et contraintes',
+      'Recherche et filtrage en temps réel',
+      'Validation des données et gestion d\'erreurs robuste',
+      'Statistiques dynamiques et compteurs en temps réel',
+      'Gestion des dépendances entre entités',
+      'Architecture MVVM avec pattern Repository',
+      'Data Binding bidirectionnel avec INotifyPropertyChanged',
+      '60+ spécialités médicales disponibles',
+      'Gestion de la disponibilité du personnel'
+    ],
+    challenges: "Développement d'une application de gestion hospitalière complète en C#/.NET 8.0 utilisant WPF pour l'interface utilisateur. Implémentation d'une architecture MVVM avec pattern Repository pour la gestion de base de données SQL Server. Création d'un système multilingue dynamique avec changement de langue en temps réel. Gestion des relations entre entités avec contraintes d'intégrité référentielle. Interface utilisateur moderne avec design Material Design et expérience utilisateur intuitive.",
+    demoImages: [
+      {
+        title: "Application de Gestion du Personnel Médical - Captures d'écran",
+        images: [
+          { path: "demo/Application_de_gestion_du_personnel_médical/Docteur.png", alt: "Gestion des médecins" },
+          { path: "demo/Application_de_gestion_du_personnel_médical/Infirmier.png", alt: "Gestion des infirmiers" },
+          { path: "demo/Application_de_gestion_du_personnel_médical/Departement.png", alt: "Gestion des départements" },
+          { path: "demo/Application_de_gestion_du_personnel_médical/Consultation.png", alt: "Gestion des consultations" },
+          { path: "demo/Application_de_gestion_du_personnel_médical/ajout.png", alt: "Formulaire d'ajout" },
+          { path: "demo/Application_de_gestion_du_personnel_médical/modifier.png", alt: "Formulaire de modification" },
+          { path: "demo/Application_de_gestion_du_personnel_médical/Capture d'écran 2025-12-04 175340.png", alt: "Interface principale" }
+        ]
+      }
+    ],
   },
 
   {
@@ -122,13 +159,13 @@ export const projects = [
       {
         title: "CortexIT - Captures d'écran",
         images: [
-          { path: 'demo-videos/CortexIT/dashboard.png', alt: 'Dashboard' },
-          { path: 'demo-videos/CortexIT/page_user.png', alt: 'Page utilisateur' },
-          { path: 'demo-videos/CortexIT/page_de_utilisatuer.png', alt: 'Gestion utilisateurs' },
-          { path: 'demo-videos/CortexIT/page_organisation.png', alt: 'Gestion organisations' },
-          { path: 'demo-videos/CortexIT/page_departement.png', alt: 'Gestion départements' },
-          { path: 'demo-videos/CortexIT/page_equipement.png', alt: 'Gestion équipements' },
-          { path: 'demo-videos/CortexIT/page_maintenance.png', alt: 'Gestion maintenance' }
+          { path: 'demo/CortexIT/dashboard.png', alt: 'Dashboard' },
+          { path: 'demo/CortexIT/page_user.png', alt: 'Page utilisateur' },
+          { path: 'demo/CortexIT/page_de_utilisatuer.png', alt: 'Gestion utilisateurs' },
+          { path: 'demo/CortexIT/page_organisation.png', alt: 'Gestion organisations' },
+          { path: 'demo/CortexIT/page_departement.png', alt: 'Gestion départements' },
+          { path: 'demo/CortexIT/page_equipement.png', alt: 'Gestion équipements' },
+          { path: 'demo/CortexIT/page_maintenance.png', alt: 'Gestion maintenance' }
         ]
       }
     ],
@@ -158,14 +195,14 @@ export const projects = [
       {
         title: "VelocityRun - Captures d'écran",
         images: [
-          { path: 'demo-videos/velocityrun/accueil.png', alt: "Page d'accueil" },
-          { path: 'demo-videos/velocityrun/accueil2.png', alt: "Page d'accueil 2" },
-          { path: 'demo-videos/velocityrun/marathon1.png', alt: 'Page marathon 1' },
-          { path: 'demo-videos/velocityrun/marathon2.png', alt: 'Page marathon 2' },
-          { path: 'demo-videos/velocityrun/chemin.png', alt: 'Page chemin' },
-          { path: 'demo-videos/velocityrun/chemin2.png', alt: 'Page chemin 2' },
-          { path: 'demo-videos/velocityrun/compte.png', alt: 'Page compte' },
-          { path: 'demo-videos/velocityrun/contact.png', alt: 'Page contact' }
+          { path: 'demo/velocityrun/accueil.png', alt: "Page d'accueil" },
+          { path: 'demo/velocityrun/accueil2.png', alt: "Page d'accueil 2" },
+          { path: 'demo/velocityrun/marathon1.png', alt: 'Page marathon 1' },
+          { path: 'demo/velocityrun/marathon2.png', alt: 'Page marathon 2' },
+          { path: 'demo/velocityrun/chemin.png', alt: 'Page chemin' },
+          { path: 'demo/velocityrun/chemin2.png', alt: 'Page chemin 2' },
+          { path: 'demo/velocityrun/compte.png', alt: 'Page compte' },
+          { path: 'demo/velocityrun/contact.png', alt: 'Page contact' }
         ]
       }
     ],
@@ -209,6 +246,11 @@ export const techIcons = {
   Java: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
   Swift: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg',
   'C#': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
+  '.NET 8.0': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg',
+  'WPF': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg',
+  'XAML': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg',
+  'MVVM Pattern': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg',
+  'Microsoft.Data.SqlClient': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg',
   Kotlin: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg',
   Pinia: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/pinia.svg',
   'Vue Router': 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/vuedotjs.svg',
