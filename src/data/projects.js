@@ -234,7 +234,7 @@ export const techIcons = {
   'Express.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
   Laravel: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg',
   Sequelize: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/sequelize.svg',
-  'Tailwind CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+  'Tailwind CSS': 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/tailwindcss.svg',
   Axios: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/axios.svg',
   'React Router': 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/reactrouter.svg',
   Vite: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg',
